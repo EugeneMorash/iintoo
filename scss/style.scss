@@ -1,13 +1,121 @@
 // * ===== fonts ===== * //
-@import "_fonts";
-// @import "_icons"; //<li class="icon-call-right"> Contact us</li>  пример (см. _icons.scss)
+
 @import "_nullstyles";
 
-// * ===== mixes ===== * //
+.wrapper {
+}
+.page {
+}
+.registration {
+  &__form {
+  }
+}
+.form {
+  &__row {
+  }
 
-// * ===== header ===== * //
-@import "_header-menu";
+  &__image {
+  }
 
-// * ===== main ===== * //
+  &__body {
+  }
+}
+.container {
+}
+.body {
+  &__heading {
+  }
 
-// * ===== footer ===== * //
+  &__subheading {
+  }
+
+  &__button-row {
+  }
+
+  &__or {
+  }
+
+  &__or-text {
+  }
+
+  &__input-row {
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
+
+  &__radio-row {
+  }
+
+  &__pop {
+  }
+
+  &__check {
+  }
+
+  &__wrap-btn {
+  }
+
+  &__btn {
+  }
+}
+.button-row {
+  &__facebook-btn {
+  }
+
+  &__facebook-link {
+  }
+
+  &__facebook-logo {
+  }
+
+  &__facebook-text {
+  }
+
+  &__linkedin-btn {
+  }
+
+  &__linkedin-link {
+  }
+
+  &__linkedin-logo {
+  }
+
+  &__linkedin-text {
+  }
+}
+.input-row {
+}
+.radio-row {
+  &__label {
+  }
+
+  &__radio-button {
+  }
+
+  &__box {
+  }
+
+  &__i-button {
+  }
+}
+.pop {
+  &__text {
+  }
+}
+.check {
+  &__label {
+  }
+
+  &__input {
+  }
+
+  &__box {
+  }
+
+  &__link {
+  }
+}

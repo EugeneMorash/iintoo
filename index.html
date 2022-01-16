@@ -10,9 +10,126 @@
 
 <body>
   <div class="wrapper">
+    <main class="page">
+      <form action="#.php" method="post" class="registration__form form">
+        <div class="container">
+          <div class="form__row">
+            <div class="form__image">
+              <img src="./img/bg.jpeg" alt="Main Image">
+            </div>
+            <div class="form__body body">
+              <h1 class="body__heading">
+                Get iintoo it today
+              </h1>
+              <h3 class="body__subheading">
+                There is no charge or obligation upon registration.
+              </h3>
+              <div class="body__button-row button-row">
+
+                <div class="button-row__facebook-btn">
+                  <a class="button-row__facebook-link" href="facebook.com" target="_blank">
+                    <img src="./img/facebook.svg" class="button-row__facebook-logo" alt="facebook logo">
+                    <p class="button-row__facebook-text">
+                      Register with Facebook
+                    </p>
+                  </a>
+                </div>
+
+                <div class="button-row__linkedin-btn">
+                  <a class="button-row__linkedin-link" href="linkedin.com" target="_blank">
+                    <img src="./img/linkedin.svg" class="button-row__linkedin-logo" alt="linkedin logo">
+                    <p class="button-row__linkedin-text">
+                      Register with LinkedIn
+                    </p>
+                  </a>
+                </div>
+              </div>
+
+              <div class="body__or">
+                <p class="body__or-text">OR</p>
+              </div>
+
+              <div class="body__input-row input-row">
+                <input type="email" name="email" placeholder="Email" value="gus.goodwin@gmail.com">
+                <input type="tel" name="phone" placeholder="Phone">
+              </div>
+
+              <h2 class="body__title">
+                What type of investor are you?
+              </h2>
+              <h4 class="body__subtitle">
+                Select the type of investor you are below.
+              </h4>
+
+              <div class="body__radio-row radio-row">
+
+                <label class="radio-row__label">
+                  <input type="radio" name="radio-button" class="radio-row__radio-button" value="individual" checked>
+                  <span class="radio-row__box"></span>
+                  Individual
+                  <div class="radio-row__i-button">
+                    <button type="button">i</button>
+                  </div>
+                </label>
+
+                <label class="radio-row__label">
+                  <input type="radio" name="radio-button" class="radio-row__radio-button" value="business">
+                  <span class="radio-row__box"></span>
+                  Business
+                  <div class="radio-row__i-button">
+                    <button type="button">i</button>
+                  </div>
+                </label>
+
+                <label class="radio-row__label">
+                  <input type="radio" name="radio-button" class="radio-row__radio-button" value="ira">
+                  <span class="radio-row__box"></span>
+                  IRA
+                  <div class="radio-row__i-button">
+                    <button type="button">i</button>
+                  </div>
+                </label>
+
+                <label class="radio-row__label">
+                  <input type="radio" name="radio-button" class="radio-row__radio-button" value="trust">
+                  <span class="radio-row__box"></span>
+                  Trust
+                  <div class="radio-row__i-button">
+                    <button type="button">i</button>
+                  </div>
+                </label>
+              </div>
+
+              <div class="body__pop pop">
+                <div class="pop__text">
+                  I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.
+                </div>
+              </div>
+
+              <div class="body__check check">
+                <label class="check__label">
+                  <input type="checkbox" name="checkbox" class="check__input">
+                  <span class="check__box"></span>
+                  I agree to the terms and receiving notifications from iintoo
+                  <a href="#" class="check__link">
+                    View full terms
+                  </a>
+                </label>
+              </div>
+
+              <div class="body__wrap-btn">
+                <button type="submit" class="body__btn">
+                  Create Account
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
 
   </div>
-  <script src="./js/script.js"></script>
+
 </body>
 
 </html>
