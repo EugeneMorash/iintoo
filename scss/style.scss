@@ -1,50 +1,124 @@
 // * ===== fonts ===== * //
 
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&display=swap");
+
 @import "_nullstyles";
 
+body {
+  font-family: "Barlow", sans-serif;
+}
 .wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #eff6ff;
+}
+.container {
+  max-width: 1440px;
+  margin: 0px auto;
+  padding: 100px 80px;
+  box-sizing: content-box;
+  background-color: #fefefe;
 }
 .page {
 }
+
 .registration {
   &__form {
   }
 }
 .form {
   &__row {
+    display: flex;
+    position: relative;
   }
 
   &__image {
   }
 
+  &__logo {
+    position: absolute;
+    width: 139px;
+    height: 27px;
+    top: 42px;
+    left: 50px;
+  }
+
   &__body {
+    padding: 0px 72px;
   }
 }
-.container {
-}
+
 .body {
   &__heading {
+    padding-top: 114px;
+    font-size: 28px;
+    letter-spacing: 0.1px;
+    color: #2a4a5c;
+    font-weight: 500;
+    margin-bottom: 21px;
   }
 
   &__subheading {
+    font-size: 20px;
+    letter-spacing: -0.19px;
+    color: #2a4a5c;
+    margin-bottom: 58px;
   }
 
   &__button-row {
+    display: flex;
+    margin-bottom: 52px;
+    padding-left: 1px;
   }
 
   &__or {
+    position: relative;
+    margin-bottom: 48px;
   }
 
   &__or-text {
+    font-size: 11px;
+    font-weight: 500;
+    color: #2a4a5c;
+    text-align: center;
+    margin-left: -2px;
+    letter-spacing: 0.45px;
+  }
+  &__or-text::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 108px;
+    background-color: #2a4a5c;
+    top: 6px;
+    left: 140px;
+  }
+  &__or-text::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 108px;
+    background-color: #2a4a5c;
+    top: 6px;
+    right: 140px;
   }
 
   &__input-row {
+    margin-bottom: 59px;
   }
 
   &__title {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    margin-bottom: 16px;
+    color: #2a4a5c;
   }
 
   &__subtitle {
+    margin-bottom: 51px;
+    letter-spacing: 0.15px;
+    color: #2a4a5c;
   }
 
   &__radio-row {
@@ -64,46 +138,193 @@
 }
 .button-row {
   &__facebook-btn {
+    height: 42px;
+    width: 246px;
+    background-color: #255a9b;
+    margin-right: 35px;
+    position: relative;
+    display: flex;
+    align-items: center;
   }
 
   &__facebook-link {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.1px;
   }
 
   &__facebook-logo {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+    width: 20px;
   }
 
   &__facebook-text {
+    margin-left: 51px;
   }
 
   &__linkedin-btn {
+    height: 42px;
+    width: 246px;
+    background-color: #0076b6;
+    position: relative;
+    display: flex;
+    align-items: center;
   }
 
   &__linkedin-link {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.05px;
   }
 
   &__linkedin-logo {
+    position: absolute;
+    top: 13px;
+    left: 17px;
+    width: 17px;
   }
 
   &__linkedin-text {
+    margin-left: 51px;
   }
 }
 .input-row {
+  display: flex;
+
+  &__email {
+    position: relative;
+    margin-left: 2px;
+    width: 246px;
+    height: 57px;
+    border-top: 1px solid #afafaf;
+    border-right: 1px solid #afafaf;
+    border-bottom: 1px solid #afafaf;
+    border-left: 2px solid blue;
+    padding: 24px 0 0 8px;
+    border-radius: 0 5px 0 0;
+    margin-right: 36px;
+    input {
+      font-size: 17px;
+      letter-spacing: -0.15px;
+      width: 230px;
+      color: #2a4a5c;
+      // background-color: gold;
+    }
+  }
+  &__e-text {
+    position: absolute;
+    color: #2a4a5c;
+    font-size: 14px;
+    top: 5px;
+    left: 8px;
+  }
+  &__phone {
+    position: relative;
+    width: 246px;
+    height: 57px;
+    border: 1px solid #afafaf;
+    padding: 24px 0 0 8px;
+    border-radius: 0 0 5px 5px;
+    input {
+      font-size: 17px;
+      letter-spacing: -0.15px;
+      width: 230px;
+      color: #2a4a5c;
+    }
+  }
+  &__p-text {
+    position: absolute;
+    color: #2a4a5c;
+    font-size: 14px;
+    top: 5px;
+    left: 8px;
+  }
 }
 .radio-row {
+  display: flex;
+  margin-left: 30px;
+  margin-bottom: 28px;
   &__label {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.26px;
+    line-height: 1em;
+    color: #2a4a5c;
+    margin-right: 84px;
+    position: relative;
+  }
+  &__label:last-child {
+    margin-right: 0;
   }
 
   &__radio-button {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    &:checked + .radio-row__box {
+      width: 1.0625em;
+      height: 1.0625em;
+      border: 4px solid #3a93ef;
+      border-radius: 50%;
+    }
+
+    &:focus + .radio-row__box {
+      box-shadow: 0 0 0 0.1em #fff, 0 0 0 0.2em #3a93ef;
+    }
+
+    &:disabled + .radio-row__box {
+      background-color: #e0e0e0;
+      box-shadow: none;
+    }
   }
 
   &__box {
+    position: absolute;
+    width: 1.0625em;
+    height: 1.0625em;
+    margin-left: -28px;
+
+    border: 2px solid #afafaf;
+    border-radius: 50%;
   }
 
   &__i-button {
+    button {
+      position: absolute;
+      top: 5px;
+      right: -17px;
+      width: 10px;
+      height: 10px;
+      border: 1px solid #afafaf;
+      border-radius: 50%;
+      font-size: 8px;
+      line-height: 8px;
+      color: #afafaf;
+      background-color: #fff;
+    }
   }
 }
+
 .pop {
+  &__wrap {
+    margin-left: 3px;
+    width: 256px;
+    height: 74px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 8px 10px 17px 14px;
+    box-shadow: 0px 0px 5px 10px #fafafa;
+    margin-bottom: 45px;
+  }
   &__text {
+    font-size: 13px;
+    line-height: 130%;
+    letter-spacing: 0.18px;
   }
 }
 .check {

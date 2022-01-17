@@ -11,11 +11,14 @@
 <body>
   <div class="wrapper">
     <main class="page">
-      <form action="#.php" method="post" class="registration__form form">
+      <form action="#" method="get" class="registration__form form">
         <div class="container">
           <div class="form__row">
             <div class="form__image">
               <img src="./img/bg.jpeg" alt="Main Image">
+            </div>
+            <div class="form__logo">
+              <img src="./img/logo.svg" alt="Logo">
             </div>
             <div class="form__body body">
               <h1 class="body__heading">
@@ -49,9 +52,20 @@
                 <p class="body__or-text">OR</p>
               </div>
 
-              <div class="body__input-row input-row">
+              <!-- <div class="body__input-row input-row">
                 <input type="email" name="email" placeholder="Email" value="gus.goodwin@gmail.com">
                 <input type="tel" name="phone" placeholder="Phone">
+              </div> -->
+
+              <div class="body__input-row input-row">
+                <div class="input-row__email">
+                  <input type="email" name="email" value="gus.goodwin@gmail.com">
+                  <p class="input-row__e-text">Email</p>
+                </div>
+                <div class="input-row__phone">
+                  <input type="tel" name="phone">
+                  <p class="input-row__p-text">Phone</p>
+                </div>
               </div>
 
               <h2 class="body__title">
@@ -101,8 +115,10 @@
               </div>
 
               <div class="body__pop pop">
-                <div class="pop__text">
-                  I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.
+                <div class="pop__wrap">
+                  <div class="pop__text">
+                    I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.
+                  </div>
                 </div>
               </div>
 
