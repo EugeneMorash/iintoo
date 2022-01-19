@@ -11,16 +11,19 @@
 <body>
   <div class="wrapper">
     <main class="page">
+      <!-- FIXME: form -->
       <form action="#" method="get" class="registration__form form">
         <div class="container">
           <div class="form__row">
             <div class="form__image">
               <img src="./img/bg.jpeg" alt="Main Image">
+              <div class="form__logo">
+                <img src="./img/logo.svg" alt="Logo">
+              </div>
             </div>
-            <div class="form__logo">
-              <img src="./img/logo.svg" alt="Logo">
-            </div>
+
             <div class="form__body body">
+              <!-- FIXME: headline -->
               <h1 class="body__heading">
                 Get iintoo it today
               </h1>
@@ -30,14 +33,17 @@
               <div class="body__button-row button-row">
 
                 <div class="button-row__facebook-btn">
+
+                  <!-- FIXME: link -->
                   <a class="button-row__facebook-link" href="facebook.com" target="_blank">
                     <img src="./img/facebook.svg" class="button-row__facebook-logo" alt="facebook logo">
-                    <p class="button-row__facebook-text">
+                    <span class="button-row__facebook-text">
                       Register with Facebook
-                    </p>
+                    </span>
                   </a>
                 </div>
 
+                <!-- FIXME: link -->
                 <div class="button-row__linkedin-btn">
                   <a class="button-row__linkedin-link" href="linkedin.com" target="_blank">
                     <img src="./img/linkedin.svg" class="button-row__linkedin-logo" alt="linkedin logo">
@@ -49,7 +55,7 @@
               </div>
 
               <div class="body__or">
-                <p class="body__or-text">OR</p>
+                <div class="body__or-text">OR</div>
               </div>
 
               <!-- <div class="body__input-row input-row">
@@ -57,6 +63,8 @@
                 <input type="tel" name="phone" placeholder="Phone">
               </div> -->
 
+
+              <!-- * TRY: delete tag p and use ::placeholder -->
               <div class="body__input-row input-row">
                 <div class="input-row__email">
                   <input type="email" name="email" value="gus.goodwin@gmail.com">
@@ -68,6 +76,8 @@
                 </div>
               </div>
 
+
+              <!-- FIXME: headline -->
               <h2 class="body__title">
                 What type of investor are you?
               </h2>
@@ -116,9 +126,9 @@
 
               <div class="body__pop pop">
                 <div class="pop__wrap">
-                  <div class="pop__text">
+                  <p class="pop__text">
                     I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.
-                  </div>
+                  </p>
                 </div>
               </div>
 
@@ -143,9 +153,7 @@
         </div>
       </form>
     </main>
-
   </div>
-
 </body>
 
 </html>

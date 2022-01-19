@@ -1,5 +1,28 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500&display=swap");
+@font-face {
+  font-display: swap;
+  font-family: "Barlow";
+  src: url("./../fonts/Barlow-Light.woff2") format("woff2"), url("./../fonts/Barlow-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Barlow";
+  src: url("./../fonts/Barlow-Regular.woff2") format("woff2"), url("./../fonts/Barlow-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Barlow";
+  src: url("./../fonts/Barlow-Medium.woff2") format("woff2"), url("./../fonts/Barlow-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
 /* --------- Обнуление стилей --------- */
 * {
   padding: 0;
@@ -93,12 +116,14 @@ body {
   background-color: #eff6ff;
 }
 
-.container {
-  max-width: 1440px;
-  margin: 0px auto;
-  padding: 100px 80px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+.registration__form {
+  position: fixed;
+  z-index: 500;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 1440px;
   background-color: #fefefe;
 }
 
@@ -106,6 +131,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.form__image {
   position: relative;
 }
 
@@ -160,13 +188,13 @@ body {
 }
 
 .body__or-text::before {
-  position: absolute;
   content: "";
+  position: absolute;
+  top: 6px;
+  left: 140px;
   height: 1px;
   width: 108px;
   background-color: #2a4a5c;
-  top: 6px;
-  left: 140px;
 }
 
 .body__or-text::after {
@@ -186,8 +214,9 @@ body {
 .body__title {
   font-size: 22px;
   font-weight: 500;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.25px;
   margin-bottom: 16px;
+  margin-left: -1.5px;
   color: #2a4a5c;
 }
 
@@ -195,6 +224,14 @@ body {
   margin-bottom: 51px;
   letter-spacing: 0.15px;
   color: #2a4a5c;
+}
+
+.body__radio-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30px;
+  margin-bottom: 28px;
 }
 
 .body__check {
@@ -205,12 +242,6 @@ body {
   width: 246px;
   height: 42px;
   margin-left: 2px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .body__btn {
@@ -250,6 +281,7 @@ body {
   top: 11px;
   left: 10px;
   width: 20px;
+  height: 20px;
 }
 
 .button-row__facebook-text {
@@ -301,7 +333,6 @@ body {
   border-right: 1px solid #afafaf;
   border-bottom: 1px solid #afafaf;
   border-left: 2px solid blue;
-  padding: 24px 0 0 8px;
   border-radius: 0 5px 0 0;
   margin-right: 36px;
 }
@@ -309,16 +340,18 @@ body {
 .input-row__email input {
   font-size: 17px;
   letter-spacing: -0.15px;
-  width: 230px;
+  width: 100%;
+  padding: 24px 0 0 8px;
   color: #2a4a5c;
+  background-color: gold;
 }
 
 .input-row__e-text {
   position: absolute;
-  color: #2a4a5c;
-  font-size: 14px;
   top: 5px;
   left: 8px;
+  color: #2a4a5c;
+  font-size: 14px;
 }
 
 .input-row__phone {
@@ -343,14 +376,6 @@ body {
   font-size: 14px;
   top: 5px;
   left: 8px;
-}
-
-.radio-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 30px;
-  margin-bottom: 28px;
 }
 
 .radio-row__label {
@@ -467,8 +492,5 @@ body {
   border: 1px solid #afafaf;
   border-radius: 2px;
   margin-left: -21px;
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: contain;
+  background: #fff 50% / contain no-repeat;
 }

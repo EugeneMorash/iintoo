@@ -10,12 +10,6 @@
     }
 }
 
-// Include font:
-// @include font("Lato", "LatoRegular", "400", "normal");
-// @include font("Open Sans", "OpenSans", "400", "normal");
-
-// Examples:
-// @include font("BebasNeue", "BebasNeueRegular", "400", "normal");
-// @include font("Lato", "LatoBold", "700", "normal");
-// @include font("Lato", "LatoRegular", "400", "normal");
-// @include font("Lato", "LatoRegularItalic", "400", "italic");
+@include font("Barlow", "Barlow-Light", "300", "normal");
+@include font("Barlow", "Barlow-Regular", "400", "normal");
+@include font("Barlow", "Barlow-Medium", "500", "normal");
